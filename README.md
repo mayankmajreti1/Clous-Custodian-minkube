@@ -64,7 +64,7 @@ This "CMD" command is taken from cloudcustodian/c7n .
 
 *save this file as cronjob.yml
 
-#### note-1 : in the i have pass region , access-key and secret-access-key under environment variable this can also be done through kube2iam which helps in passing aws roles in k8s . 
+#### note-1 : in this I have passed region , access-key and secret-access-key under environment variable this can also be done through kube2iam which helps in passing aws roles in k8s . 
 
 #### note-2 : in "args" we specified run command of cloud-custodian.
 
