@@ -83,6 +83,16 @@ minikube dashboard > cronjob
     
 #### note : While watching pods in minkube , it will always show pods going in running state and eventually goes down , this is normal because cloud-custodian does it job and exit the script . 
 
-#### For this we have used cronjob so when the pod goes down , the crron job triggers itself and it will again run the pod . 
+#### For this we have used cronjob so when the pod goes down , the cron job triggers itself and it will again run the pod . 
 ![Screenshot from 2023-05-19 12-44-13](https://github.com/mayankmajreti1/Clous-Custodian-minkube/assets/126334005/4df51642-f03d-46a2-8f4c-7a511f150313)
 
+### Using k8s secrets for passing aws-credentials 
+1. Create secret.yml 
+    
+![image](https://github.com/mayankmajreti1/Clous-Custodian-minkube/assets/126334005/513c0bd1-602d-416b-8f1e-22a6e00754b6)
+    
+2. Passing secrets in cron-job 
+    
+![Screenshot from 2023-06-02 17-25-30](https://github.com/mayankmajreti1/Clous-Custodian-minkube/assets/126334005/3020e2f5-1b06-47a3-8c82-81e7c1f82d76)
+
+#### note : now follow the same steps (running a cron-job) that are mentioned above .
