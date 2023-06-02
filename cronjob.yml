@@ -10,15 +10,21 @@ spec:
         spec:
           containers:
           - name: cron-job-cc
-            image: public.ecr.aws/xxxxxx/test-image-ecr
+            image: public.ecr.aws/f6z5e0l4/uat-cloud-custodian
             imagePullPolicy: Always
             env:
             - name: AWS_DEFAULT_REGION
               value: "us-east-1"
             - name: AWS_ACCESS_KEY_ID
-              value: "XXXXXXXXXXXXXXXX"
+              valueFrom:
+                secretKeyRef:
+                  name: aws-credentials
+                  key: AWS_ACCESS_KEY_ID
             - name: AWS_SECRET_ACCESS_KEY
-              value: "xxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+              valueFrom:
+                secretKeyRef:
+                  name: aws-credentials
+                  key: AWS_SECRET_ACCESS_KEY    
             command:
             args: ["run","-v","-s","/opt/test","/opt/test/policy.yml"]    
           restartPolicy: OnFailure
