@@ -46,7 +46,7 @@ This will look something like this :
 
 ## creating Dockerfile with base image of cloudcustodian/c7n
 
-![Screenshot from 2023-05-19 12-48-30](https://github.com/mayankmajreti1/Clous-Custodian-minkube/assets/126334005/fd55054f-d05a-43b5-84f9-cd8e0f3bb31e)
+![Screenshot from 2023-06-02 17-31-50](https://github.com/mayankmajreti1/Clous-Custodian-minkube/assets/126334005/3cf2e3f4-1bf1-4c65-9f85-f382955d4c13)
 
 
 #### note :
