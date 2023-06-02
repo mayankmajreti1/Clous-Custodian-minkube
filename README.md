@@ -51,7 +51,7 @@ This will look something like this :
 
 #### note :
 1. This "CMD" command is taken from cloudcustodian/c7n . 
-2. While creating DockerFile i have coppied custom template for displaying content in better form while recieving in mail , you can check customtemplate.html.j2 file in the repository
+2. While creating DockerFile i have coppied custom template for displaying content in better form while recieving in mail , you can check custom.html.j2 file in the repository
 
 ## Pushing Docker file to ECR
 1. Create a public repo in ECR
